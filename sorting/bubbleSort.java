@@ -43,7 +43,7 @@ public class bubbleSort{
 
      public static void insertionsort(int arr[]){
         int n=arr.length;
-       for(int i=1;i<arr.length;i++) {
+       for(int i=1;i<n;i++) {
         int curr=arr[i];
         
         int prev=i-1;
