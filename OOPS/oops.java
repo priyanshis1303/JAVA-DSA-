@@ -6,10 +6,10 @@ public class oops {
 // seetting pen color 
           Pen p1= new Pen();
           p1.setColor("blue");
-          System.out.println(p1.color);
+          System.out.println(p1.getcolor());
 //setting pen tip size 
           p1.settip(5);
-          System.out.println(p1.tip);
+          System.out.println(p1.gettip());
 
           //Access modifiers 
 //first make object 
@@ -30,9 +30,21 @@ public class oops {
      }
 // creating  blueprint of pen (class)
     class Pen{
-     String color;
-     int tip;
+     // String color;
+     // int tip;
+//getters jo basically private variables in a class 
+//ko access karne deta hai 
+  private String color;
+    private  int tip;
 
+    String getcolor(){
+     return this.color;
+    }
+    int gettip(){
+     return this.tip;
+    }
+
+//setters 
      void setColor(String newcolor){
           color=newcolor;
      }
@@ -62,3 +74,4 @@ class BankAccount{
 
 }
 
+  
